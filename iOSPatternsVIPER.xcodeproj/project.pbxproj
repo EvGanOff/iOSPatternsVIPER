@@ -13,9 +13,6 @@
 		5ED15CAB277C7525001380BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED15CA9277C7525001380BA /* Main.storyboard */; };
 		5ED15CAD277C7527001380BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED15CAC277C7527001380BA /* Assets.xcassets */; };
 		5ED15CB0277C7527001380BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED15CAE277C7527001380BA /* LaunchScreen.storyboard */; };
-		5ED15CBB277C7527001380BA /* iOSPatternsVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED15CBA277C7527001380BA /* iOSPatternsVIPERTests.swift */; };
-		5ED15CC5277C7527001380BA /* iOSPatternsVIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED15CC4277C7527001380BA /* iOSPatternsVIPERUITests.swift */; };
-		5ED15CC7277C7527001380BA /* iOSPatternsVIPERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED15CC6277C7527001380BA /* iOSPatternsVIPERUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		5ED15CAF277C7527001380BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ED15CB1277C7527001380BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ED15CB6277C7527001380BA /* iOSPatternsVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPatternsVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ED15CBA277C7527001380BA /* iOSPatternsVIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPatternsVIPERTests.swift; sourceTree = "<group>"; };
 		5ED15CC0277C7527001380BA /* iOSPatternsVIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPatternsVIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ED15CC4277C7527001380BA /* iOSPatternsVIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPatternsVIPERUITests.swift; sourceTree = "<group>"; };
-		5ED15CC6277C7527001380BA /* iOSPatternsVIPERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPatternsVIPERUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				5ED15CA2277C7525001380BA /* iOSPatternsVIPER */,
-				5ED15CB9277C7527001380BA /* iOSPatternsVIPERTests */,
-				5ED15CC3277C7527001380BA /* iOSPatternsVIPERUITests */,
 				5ED15CA1277C7525001380BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				5ED15CB1277C7527001380BA /* Info.plist */,
 			);
 			path = iOSPatternsVIPER;
-			sourceTree = "<group>";
-		};
-		5ED15CB9277C7527001380BA /* iOSPatternsVIPERTests */ = {
-			isa = PBXGroup;
-			children = (
-				5ED15CBA277C7527001380BA /* iOSPatternsVIPERTests.swift */,
-			);
-			path = iOSPatternsVIPERTests;
-			sourceTree = "<group>";
-		};
-		5ED15CC3277C7527001380BA /* iOSPatternsVIPERUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5ED15CC4277C7527001380BA /* iOSPatternsVIPERUITests.swift */,
-				5ED15CC6277C7527001380BA /* iOSPatternsVIPERUITestsLaunchTests.swift */,
-			);
-			path = iOSPatternsVIPERUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ED15CBB277C7527001380BA /* iOSPatternsVIPERTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ED15CC7277C7527001380BA /* iOSPatternsVIPERUITestsLaunchTests.swift in Sources */,
-				5ED15CC5277C7527001380BA /* iOSPatternsVIPERUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +428,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -484,7 +456,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
