@@ -6,25 +6,24 @@
 //
 
 import Foundation
-import UIKit
 
 // Object
 // Protocol
 // Link to presenter
 
-protocol AnyInteractor {
-    var presenter: AnyPresenter? { get set }
+protocol AnyInteractorProtocol: AnyObject {
+    var presenter: AnyPresenterProtocol? { get set }
 
     func getSettingsTable ()
 }
 
-class UserInteractor: AnyInteractor {
+class UserInteractor: AnyInteractorProtocol {
 
 
-    var presenter: AnyPresenter?
+    var presenter: AnyPresenterProtocol?
 
     func getSettingsTable() {
         let entity = SettingsModel()
-        self.presenter?.interactorDidFetchSettings(with: entity)
+        self.presenter?.interactorDidFetchSettingsPoints(with: [entity])
     }
 }

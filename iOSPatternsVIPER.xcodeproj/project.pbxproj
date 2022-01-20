@@ -88,6 +88,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E7E9CBF27997BBD0027D277 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5ED15CDE2785DC70001380BA /* Cells */,
+				5ED15CD42785B42E001380BA /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E7E9CC027997BC80027D277 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5ED15CD62785B47D001380BA /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5E7E9CC127997BDA0027D277 /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				5ED15CD82785B494001380BA /* Presenter.swift */,
+			);
+			path = Presentor;
+			sourceTree = "<group>";
+		};
+		5E7E9CC227997BE30027D277 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5ED15CDA2785B4AB001380BA /* Entity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5E7E9CC327997BF20027D277 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5ED15CDC2785B4C1001380BA /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5E7E9CC427997C0F0027D277 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5ED15CE92785EA96001380BA /* Main.storyboard */,
+				5ED15CAC277C7527001380BA /* Assets.xcassets */,
+				5ED15CAE277C7527001380BA /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E7E9CC527997C1B0027D277 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5ED15CA3277C7525001380BA /* AppDelegate.swift */,
+				5ED15CA5277C7525001380BA /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		5ED15C97277C7525001380BA = {
 			isa = PBXGroup;
 			children = (
@@ -109,13 +169,10 @@
 		5ED15CA2277C7525001380BA /* iOSPatternsVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				5ED15CA3277C7525001380BA /* AppDelegate.swift */,
-				5ED15CA5277C7525001380BA /* SceneDelegate.swift */,
-				5ED15CD32785B40D001380BA /* VIPER */,
-				5ED15CE92785EA96001380BA /* Main.storyboard */,
-				5ED15CAC277C7527001380BA /* Assets.xcassets */,
-				5ED15CAE277C7527001380BA /* LaunchScreen.storyboard */,
 				5ED15CB1277C7527001380BA /* Info.plist */,
+				5E7E9CC527997C1B0027D277 /* App */,
+				5ED15CD32785B40D001380BA /* VIPER */,
+				5E7E9CC427997C0F0027D277 /* Resources */,
 			);
 			path = iOSPatternsVIPER;
 			sourceTree = "<group>";
@@ -123,12 +180,11 @@
 		5ED15CD32785B40D001380BA /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				5ED15CDE2785DC70001380BA /* Cells */,
-				5ED15CD42785B42E001380BA /* View.swift */,
-				5ED15CD62785B47D001380BA /* Interactor.swift */,
-				5ED15CD82785B494001380BA /* Presenter.swift */,
-				5ED15CDA2785B4AB001380BA /* Entity.swift */,
-				5ED15CDC2785B4C1001380BA /* Router.swift */,
+				5E7E9CBF27997BBD0027D277 /* View */,
+				5E7E9CC027997BC80027D277 /* Interactor */,
+				5E7E9CC127997BDA0027D277 /* Presentor */,
+				5E7E9CC227997BE30027D277 /* Entity */,
+				5E7E9CC327997BF20027D277 /* Router */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";

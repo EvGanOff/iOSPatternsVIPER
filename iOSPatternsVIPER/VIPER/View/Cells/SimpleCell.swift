@@ -5,7 +5,6 @@
 //  Created by Евгений Ганусенко on 1/5/22.
 //
 
-import Foundation
 import UIKit
 
 class SimpleCell: UITableViewCell {

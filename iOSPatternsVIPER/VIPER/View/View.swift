@@ -12,20 +12,19 @@ import UIKit
 // Protocol
 // Link to presenter
 
-protocol AnyView {
-    var presenter: AnyPresenter? { get set }
+protocol AnyViewProtocol {
+    var presenter: AnyPresenterProtocol? { get set }
     
     func getSettingsTable(with settings: SettingsModel)
-
+    func pushViewController(_ viewController: AnyViewProtocol)
 }
 
-class UserViewController: UIViewController, AnyView {
+class UserViewController: UIViewController, AnyViewProtocol {
     
     //MARK: - Properties
-
-    private var model = SettingsModel()
+    var model = SettingsModel()
     
-    var presenter: AnyPresenter?
+    weak var presenter: AnyPresenterProtocol?
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
@@ -68,6 +67,11 @@ class UserViewController: UIViewController, AnyView {
             tableView.widthAnchor.constraint(equalTo: view.widthAnchor),
             tableView.heightAnchor.constraint(equalTo: view.heightAnchor)
         ])
+    }
+
+    func pushViewController(_ viewController: AnyViewProtocol) {
+        guard let newViewController = viewController as? UIViewController else { return }
+        self.navigationController?.pushViewController(newViewController, animated: true)
     }
 }
 
