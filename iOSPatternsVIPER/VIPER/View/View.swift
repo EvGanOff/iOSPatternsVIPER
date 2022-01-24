@@ -37,7 +37,6 @@ class UserViewController: UIViewController, AnyViewProtocol {
         return tableView
     }()
 
-    
     // MARK: - viewDidLoad()
 
     override func viewDidLoad() {
@@ -114,7 +113,6 @@ extension UserViewController: UITableViewDataSource {
             return cell
         }
     }
-
 }
 
 extension UserViewController: UITableViewDelegate {

@@ -17,7 +17,7 @@ protocol AnyPresenterProtocol: AnyObject {
     var view: AnyViewProtocol? { get set }
     var settingsPoints: [SettingsModel]? { get set }
 
-    func viewDidLoad()
+    func interactorGetStartigSettings()
     func interactorDidFetchSettingsPoints(with result: [SettingsModel])
     func getCurrentSettingsPoint(with indexPath: IndexPath) -> SettingsModel?
     func numberOfRowsInSection(_ section: Int) -> Int
@@ -37,7 +37,8 @@ class SettingsAppPresenter: AnyPresenterProtocol {
     var settingsPoints: [SettingsModel]?
 
     //MARK: - Functions
-    func viewDidLoad() {
+
+    func interactorGetStartigSettings() {
         interactor?.getSettingsTable()
     }
 

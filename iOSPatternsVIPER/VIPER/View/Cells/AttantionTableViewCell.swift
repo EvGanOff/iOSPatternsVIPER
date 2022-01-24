@@ -39,6 +39,7 @@ class AttentionTableViewCell: SimpleCell {
     }
 
 // MARK: - SetupHierarchy
+
     override func setupHierarchy() {
         super.setupHierarchy()
         contentView.addSubview(attentionConteiner)
@@ -62,6 +63,7 @@ class AttentionTableViewCell: SimpleCell {
     }
 
 // MARK: - SetupLayout
+    
     override func setupLayout() {
         super.setupLayout()
         let attantionSize: CGFloat = contentView.frame.size.height - Cell.attentionContainer
