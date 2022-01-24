@@ -54,7 +54,6 @@ enum SettingsOptionType {
     case statusModeCell (model: SettingsModeStatusType)
 }
 
-
 //MARK: - Configurate Section and Cells
 
 class SettingsModel {

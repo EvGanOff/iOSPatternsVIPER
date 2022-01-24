@@ -19,7 +19,6 @@ protocol AnyInteractorProtocol: AnyObject {
 
 class UserInteractor: AnyInteractorProtocol {
 
-
     var presenter: AnyPresenterProtocol?
 
     func getSettingsTable() {

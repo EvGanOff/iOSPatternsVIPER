@@ -21,7 +21,6 @@ protocol AnyRouterProtocol {
 class UserRouter: AnyRouterProtocol {
     weak var presenter: AnyPresenterProtocol?
 
-
     static func start() -> AnyRouterProtocol {
         let router = UserRouter()
 
